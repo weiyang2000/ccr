@@ -51,11 +51,11 @@ async function run(options: RunOptions = {}) {
   // Clean up old log files, keeping only the 10 most recent ones
   await cleanupLogFiles();
   const config = await initConfig();
-  let HOST = config.HOST;
+  let HOST = config.HOST || "0.0.0.0";
 
-  if (config.HOST && !config.APIKEY) {
-    HOST = "127.0.0.1";
-    console.warn("⚠️ API key is not set. HOST is forced to 127.0.0.1.");
+  if (!config.APIKEY) {
+    console.warn("⚠️ API key is not set. Service will accept connections from any IP address.");
+    console.warn("⚠️ For security, please set APIKEY in your config to restrict access.");
   }
 
   const port = config.PORT || 3456;
