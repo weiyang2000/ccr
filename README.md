@@ -37,7 +37,8 @@ ccr start
 </mark>
 
 <mark style="background-color: #ffe066;">
-After that Using claude code with settings.json like this
+After that Using claude code with settings.json like this</mark>
+
 ```shell
 # Windows: Windows:C:\Users\{USER_NAME}\.claude\settings.json
 # Linux/Macos:~/.claude/settings.json
@@ -48,8 +49,6 @@ After that Using claude code with settings.json like this
   }
 }
 ```
-
-</mark>
   
 ## 🚀 Getting Started
 
