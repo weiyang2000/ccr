@@ -35,6 +35,7 @@ npm run build
 ccr start
 ```
 </mark>
+
 <mark style="background-color: #ffe066;">
 After that Using claude code with settings.json like this
 ```shell
@@ -47,7 +48,7 @@ After that Using claude code with settings.json like this
   }
 }
 ```
-</mark>
+</mark>mark
 ## 🚀 Getting Started
 
 ### 1. Installation
