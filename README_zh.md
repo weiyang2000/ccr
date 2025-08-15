@@ -15,6 +15,9 @@
 -   **GitHub Actions 集成**: 在您的 GitHub 工作流程中触发 Claude Code 任务。
 -   **插件系统**: 使用自定义转换器扩展功能。
 
+## <mark style="background-color: #ffe066;">新的更改</mark>
+
+
 ## 🚀 快速入门
 
 ### 1. 安装
