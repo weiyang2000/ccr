@@ -18,6 +18,10 @@ I am seeking funding support for this project to better sustain its development.
 - **GitHub Actions Integration**: Trigger Claude Code tasks in your GitHub workflows.
 - **Plugin System**: Extend functionality with custom transformers.
 
+
+## <mark style="background-color: #ffe066;">New Change！</mark>
+<mark style="background-color: #ffe066;">Now Your CCR can listen all ip which means that you can deploy ccr on your claude and use claude code through it no mater what you are.</mark>
+
 ## 🚀 Getting Started
 
 ### 1. Installation
