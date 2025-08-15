@@ -48,7 +48,9 @@ After that Using claude code with settings.json like this
   }
 }
 ```
-</mark>mark
+
+</mark>
+  
 ## 🚀 Getting Started
 
 ### 1. Installation
