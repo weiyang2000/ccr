@@ -16,7 +16,33 @@
 -   **插件系统**: 使用自定义转换器扩展功能。
 
 ## <mark style="background-color: #ffe066;">新的更改</mark>
+<mark style="background-color: #ffe066;">你的 CCR 可以监听所有 IP，也就是说你可以把它部署到云端，无论身处何地，都能通过它使用 Claude Code，尝试下面的代码步骤:</mark>
 
+```shell
+# step1:克隆仓库
+git clone https://github.com/weiyang2000/ccr.git # 我对原项目进行了一定的优化，使其能部署在云服务器上
+# step2:安装必要依赖
+cd ccr && npm install
+# step3:源码安装ccr
+npm run build
+# step4:修改config.json配置文件（Windows:C:\Users\{USER_NAME}\.claude-code-router;Linux:~/.claude-code-router）
+# 增加HOST和APIKEY，参考下面的图
+# step5:运行服务
+ccr start
+```
+
+<mark style="background-color: #ffe066;">在Claude Code配置文件中写入对应的配置</mark>
+
+```shell
+# Windows: Windows:C:\Users\{USER_NAME}\.claude\settings.json
+# Linux/Macos:~/.claude/settings.json
+{
+  "env": {
+    "ANTHROPIC_API_KEY": "your-secret-key-123",
+    "ANTHROPIC_BASE_URL": "http://{your_domain}:3456"
+  }
+}
+```
 
 ## 🚀 快速入门
 
