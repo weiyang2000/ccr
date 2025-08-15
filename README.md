@@ -20,8 +20,34 @@ I am seeking funding support for this project to better sustain its development.
 
 
 ## <mark style="background-color: #ffe066;">New Change！</mark>
-<mark style="background-color: #ffe066;">Now Your CCR can listen all ip which means that you can deploy ccr on your claude and use claude code through it no mater what you are.</mark>
-
+<mark style="background-color: #ffe066;">Now Your CCR can listen all ip which means that you can deploy ccr on your cloud and use claude code through it no mater what you are.</mark>
+<mark style="background-color: #ffe066;">Try This:
+```shell
+# step1:clone repo
+git clone https://github.com/weiyang2000/ccr.git # 我对原项目进行了一定的优化，使其能部署在云服务器上
+# step2:install dependencies
+cd ccr && npm install
+# step3:build ccr from source code
+npm run build
+# step4:modify config.json (Windows:C:\Users\{USER_NAME}\.claude-code-router;Linux:~/.claude-code-router)
+# add HOST and KEY in config.json
+# step5:start server
+ccr start
+```
+</mark>
+<mark style="background-color: #ffe066;">
+After that Using claude code with settings.json like this
+```shell
+# Windows: Windows:C:\Users\{USER_NAME}\.claude\settings.json
+# Linux/Macos:~/.claude/settings.json
+{
+  "env": {
+    "ANTHROPIC_API_KEY": "your-secret-key-123",
+    "ANTHROPIC_BASE_URL": "http://{your_domain}:3456"
+  }
+}
+```
+</mark>
 ## 🚀 Getting Started
 
 ### 1. Installation
